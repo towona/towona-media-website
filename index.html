@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Towona Media Group</title>
+  <meta name="description" content="Towona Media Group – Creative solutions in media, branding, and digital strategy." />
+  <style>
+    :root{
+      --bg:#000000;        /* black background */
+      --bg-grad:#111111;   /* gradient background */
+      --text:#e5e5e5;      /* light text */
+      --muted:#9ca3af;     /* secondary text */
+      --card:#1a1a1a;      /* dark gray cards */
+      --brand:#f97316;     /* orange accent */
+      --brand-ink:#000;    /* text on orange */
+      --ring:#333333;      /* border */
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: Arial, sans-serif; background:var(--bg); color:var(--text);}
+    a{color:var(--brand)}
+
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:50;display:flex;gap:24px;align-items:center;justify-content:space-between;
+      padding:14px 20px;background:var(--bg);color:var(--text);border-bottom:1px solid var(--ring);}
+    .brand{font-weight:700;letter-spacing:.2px}
+    .links a{color:var(--text);margin:0 10px;text-decoration:none;font-weight:600;opacity:.85}
+    .links a:hover{opacity:1;text-decoration:underline}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,var(--bg),var(--bg-grad));text-align:center;padding:100px 20px;}
+    .hero h1{font-size:2.4rem;margin-bottom:14px;color:var(--brand)}
+    .hero p{opacity:.9;max-width:760px;margin:0 auto 28px;font-size:1.2rem}
+    .cta{display:inline-block;background:var(--brand);color:var(--brand-ink);
+      padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none}
+
+    /* SECTIONS */
+    section{padding:60px 20px;max-width:900px;margin:auto}
+    h2{color:var(--brand);margin-bottom:12px}
+    .card{background:var(--card);padding:20px;border-radius:10px;margin-bottom:20px}
+    .muted{color:var(--muted)}
+
+    footer{text-align:center;padding:20px;background:#111;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="brand">Towona Media Group</div>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Towona Media Group</h1>
+    <p>Creative solutions in media, branding, and digital strategy.</p>
+    <a class="cta" href="#contact">Work With Us</a>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="card">
+      <h3>Media Production</h3>
+      <p class="muted">High-quality content creation for digital and traditional platforms.</p>
+    </div>
+    <div class="card">
+      <h3>Brand Strategy</h3>
+      <p class="muted">Crafting brand stories that resonate with audiences worldwide.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p class="muted">Targeted campaigns to drive growth and engagement.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Towona Media Group brings together creative minds and strategic thinkers to deliver impactful solutions. Our team blends storytelling, design, and digital expertise to help businesses grow and connect with their audiences.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:info@towona.com">info@towona.com</a> to start your project.</p>
+  </section>
+
+  <footer>
+    © 2025 Towona Media Group. All rights reserved.
+  </footer>
+</body>
+</html>
