@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>世通华纳</title>
+
+
+     <link href="css/video-js.css" rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+     <script src="js/video.js"></script>
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+     <script>
+          videojs.options.flash.swf = "js/video-js.swf";
+     </script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+    <style type="text/css">
+    .video-js{
+              /* Set rules to fill background */
+              min-height: 100%;
+              min-width: 100%;
+              
+              /* Set up proportionate scaling */
+              width: 100%;
+              height: auto;
+              
+              /* Set up positioning */
+              position: fixed;
+              top: 0;
+              left: 0;
+            }
+          video {
+            object-fit: fill;
+          }  
+       footer {
+            position: fixed;
+            bottom: 0;
+        }   
+        a {
+          color:#333333;
+          font-weight: bold;
+        }
+
+    </style>
+  </head>
+
+  <body>
+<nav class="navbar navbar-fixed-top" style="background: url('images/MaskBGWhite.png');" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-align-justify"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+          <a class="navbar-brand" href="index.html"><img style="height:50px;" src="images/towonalogo.png"/></a>
+        </div>
+        <br>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="mainmenubar_div" class="collapse navbar-collapse navbar-ex1-collapse">
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    
+    <br>
+    
+
+        <video id='example_video_1' class='video-js vjs-default-skin' data-setup='{
+        "controls": false, 
+        "autoplay": true, 
+        "preload": "auto",
+        "loop":true
+          }'>
+          <source src="media/videos/360-8.mp4" type='video/mp4' />
+          <!-- <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+          <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' /> -->
+        </video>
+
+  
+
+    
+
+
+    
+
+
+
+
+
+
+    <!--   <footer>
+        
+            <p class="text-center" style="color:#FFFFFF"><a href="about.html">关于我们</a> | <a href="about.html#contactus">联系我们</a> | <a href="productsandservices.html#sales">广告销售</a> | <a href="productsandservices.html#cases">成功案例</a><br>
+中国营运总部：北京市朝阳区八里庄西里99号住邦2000商务中心2号楼23层 100025 电话：86-10-59270000 传真：86-10-59270010 <br>
+Copyright 2014 Towona Corporation,All rights Reserved 世通华纳 版权所有 ICP-备-05012429</p>
+          
+      </footer> -->
+        <nav class="navbar navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <ul class="nav nav-pills">
+              <li class="pull-right">
+                <button type="button" id="btn_volume_icon" class="btn btn-primary active" data-toggle="button"><span id="span_volume_icon" class="icon-volume-off"></span></button>            
+              </li>
+              <li class="pull-right">&nbsp;</li>
+              <li class="pull-right">
+                <button type="button" id="btn_pause_icon"  class="btn btn-primary" data-toggle="button"><span id="span_pause_icon"  class="icon-pause"></span></button>
+              </li>
+              <li class="pull-right">&nbsp;</li>
+              <li class="pull-right">
+                <button type="button" id="btn_skip_icon" class="btn btn-primary" data-toggle="button"><span class="icon-step-forward"></span></button>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <p class="text-center" style="color:#FFFFFF"><a href="about.html">关于我们</a> | <a href="about.html#contactus">联系我们</a> | <a href="productsandservices.html#sales">广告销售</a> | <a href="productsandservices.html#cases">成功案例</a><br>
+中国营运总部：北京市朝阳区八里庄西里99号住邦2000商务中心2号楼23层 100025 电话：86-10-59270000 传真：86-10-59270010 <br>
+Copyright 2014 Towona Corporation,All rights Reserved 世通华纳 版权所有 ICP-备-05012429</p>
+          </div>
+        </nav>
+
+<!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/public.js"></script>
+    <script type="text/javascript">
+      genMenu();
+      var myPlayer = videojs('example_video_1');
+      
+      $('#btn_volume_icon').click(function () {
+            var btn = $(this)
+            var active =btn.hasClass('active');
+            if(active)//muted
+            {
+              
+              var icon = document.getElementById("span_volume_icon")
+              icon.className = "icon-volume-up" ;
+              myPlayer.muted(false);
+            }
+            else //unmuted
+            {
+              
+              var icon = document.getElementById("span_volume_icon")
+              icon.className = "icon-volume-off" ;
+              myPlayer.muted(true);
+            }
+          })
+         
+      $('#btn_pause_icon').click(function () {
+            var btn = $(this)
+            var active =btn.hasClass('active');
+            if(active)//pause
+            {
+              
+              var icon = document.getElementById("span_pause_icon")
+              icon.className = "icon-pause" ;
+              myPlayer.play();
+            }
+            else //play
+            {
+              
+              var icon = document.getElementById("span_pause_icon")
+              icon.className = "icon-play" ;
+              myPlayer.pause();
+            }
+          })
+      
+      $('#btn_skip_icon').click(function () {
+            window.location.assign("index.html");
+          })
+
+      myPlayer.ready(function(){
+          
+
+          // EXAMPLE: Start playing the video.
+          myPlayer.play();
+          myPlayer.muted(true);
+          myPlayer.volume(0.1); 
+          // myPlayer.controls(true);
+          try{
+          myPlayer.enableTouchActivity();}
+          catch(e){
+
+          }
+          myPlayer.on("ended",function(){
+            myPlayer.play();
+          })
+        });
+    </script>
+  </body>
+</html>

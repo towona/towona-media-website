@@ -1,98 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Towona Media Group</title>
-  <meta name="description" content="Towona Media Group – Creative solutions in media, branding, and digital strategy." />
-  <style>
-    :root{
-      --bg:#000000;        /* black background */
-      --bg-grad:#111111;   /* gradient background */
-      --text:#e5e5e5;      /* light text */
-      --muted:#9ca3af;     /* secondary text */
-      --card:#1a1a1a;      /* dark gray cards */
-      --brand:#f97316;     /* orange accent */
-      --brand-ink:#000;    /* text on orange */
-      --ring:#333333;      /* border */
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0; font-family: Arial, sans-serif; background:var(--bg); color:var(--text);}
-    a{color:var(--brand)}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    /* NAV */
-    .nav{position:sticky;top:0;z-index:50;display:flex;gap:24px;align-items:center;justify-content:space-between;
-      padding:14px 20px;background:var(--bg);color:var(--text);border-bottom:1px solid var(--ring);}
-    .brand{font-weight:700;letter-spacing:.2px}
-    .links a{color:var(--text);margin:0 10px;text-decoration:none;font-weight:600;opacity:.85}
-    .links a:hover{opacity:1;text-decoration:underline}
+    <title>世通华纳</title>
 
-    /* HERO */
-    .hero{background:linear-gradient(135deg,var(--bg),var(--bg-grad));text-align:center;padding:100px 20px;}
-    .hero h1{font-size:2.4rem;margin-bottom:14px;color:var(--brand)}
-    .hero p{opacity:.9;max-width:760px;margin:0 auto 28px;font-size:1.2rem}
-    .cta{display:inline-block;background:var(--brand);color:var(--brand-ink);
-      padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none}
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    /* SECTIONS */
-    section{padding:60px 20px;max-width:900px;margin:auto}
-    h2{color:var(--brand);margin-bottom:12px}
-    .card{background:var(--card);padding:20px;border-radius:10px;margin-bottom:20px}
-    .muted{color:var(--muted)}
+    <!-- Add custom CSS here -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+  </head>
 
-    footer{text-align:center;padding:20px;background:#111;color:var(--muted)}
-  </style>
-</head>
-<body>
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="brand">Towona Media Group</div>
-    <div class="links">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+          <a class="navbar-brand" href="index.html"><img style="height:50px;" src="images/towonalogo.png"/></a>
+        </div>
+        <br>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="mainmenubar_div" class="collapse navbar-collapse navbar-ex1-collapse">
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    <br>
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          
+          <div class="item active">
+            <div class="fill" style="background-image:url('images/banner_image1.png');"></div>
+            <div class="carousel-caption">
+                <div class="row hidden-sm">
+                  <div class="col-md-6">
+                    <img class="img-responsive" src="images/banner_image3_text1.png" />
+                    <br>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <img class="img-responsive" src="images/banner_image3_text2.png" />
+                  
+                  </div>
+                 
+
+                </div>
+                <div class="row visible-sm">
+                    
+                    <img class="img-responsive" src="images/banner_image3_text1.png" />
+                  
+                </div>
+              
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('images/0625-2.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('images/you.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
     </div>
-  </nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Towona Media Group</h1>
-    <p>Creative solutions in media, branding, and digital strategy.</p>
-    <a class="cta" href="#contact">Work With Us</a>
-  </header>
+    <div class="section">
 
-  <!-- SERVICES -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="card">
-      <h3>Media Production</h3>
-      <p class="muted">High-quality content creation for digital and traditional platforms.</p>
-    </div>
-    <div class="card">
-      <h3>Brand Strategy</h3>
-      <p class="muted">Crafting brand stories that resonate with audiences worldwide.</p>
-    </div>
-    <div class="card">
-      <h3>Digital Marketing</h3>
-      <p class="muted">Targeted campaigns to drive growth and engagement.</p>
-    </div>
-  </section>
+      <div class="container">
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Towona Media Group brings together creative minds and strategic thinkers to deliver impactful solutions. Our team blends storytelling, design, and digital expertise to help businesses grow and connect with their audiences.</p>
-  </section>
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <h3 ><i class="icon-fire"></i><a href="news.html"> 新闻中心 | News Center</a></h3>
+            <p>
+                <ul id="newsfeed_ul"> 
+                  <!-- <li>2013-08-19“玩转魔方”成功的变革始于强大的内心---世通华纳集团领导与各子公司总经理参加拓展</li>
+                  <li>2013-08-13 世通华纳2013年Q2季度工作会议顺利召开</li>
+                  <li>2013-08-06世通华纳开创公交电视增值服务，打造公交移动电视与网络社交媒体融合平台</li>
+                  <li>2013-07-30公交移动，随你而行——世通华纳设立全国公共微信账户</li>
+                  <li>2013-06-13“一路相伴•精彩同行”世通华纳名人之夜闪耀绽放</li> -->
+                </ul>           
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h3><i class="icon-asterisk"></i><a href="productsandservices.html"> 广告销售 | Advertising Sales </a></h3>
+            <p>
+                世通华纳拥有极高的传播效率和媒体性比，一直专注于公交移动电视行业，全面覆盖中国重点城市，打造了公交移动电视全国联播网，实现了真正意义的全国同步精准传播，媒体的价值得到强势凸显...>>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h3><i class="icon-globe"></i><a href="operation.html"> 资源媒介 | Media Resources </a></h3>
+            <p>
+                世通华纳采用了先进的无线传输技术，实现了节目的实时更新，最大限度避免了传播过程中的信息损耗；同时自有运维队伍及车载移动电视系统技术研发团队，保证了节目及广告的刊播质量，保障了广告主对于收视率的极致追求...>>
+            </p>
+          </div>
+        </div><!-- /.row -->
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:info@towona.com">info@towona.com</a> to start your project.</p>
-  </section>
+      </div><!-- /.container -->
 
-  <footer>
-    © 2025 Towona Media Group. All rights reserved.
-  </footer>
-</body>
+    </div><!-- /.section -->
+
+
+    <div class="section">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2><i class="icon-film"></i> 影视制作 | Program Production</h2>
+            <hr>
+          </div>
+          <div id="videolist_div"></div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+    </div><!-- /.section -->
+
+
+
+    <div class="container">
+
+      <hr>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center"><a href="about.html">关于我们</a> | <a href="about.html#contactus">联系我们</a> | <a href="productsandservices.html#sales">广告销售</a> | <a href="productsandservices.html#cases">成功案例</a><br>
+中国营运总部：北京市朝阳区八里庄西里99号住邦2000商务中心2号楼23层 100025 电话：86-10-59270000 传真：86-10-59270010 <br>
+Copyright 2014 Towona Corporation,All rights Reserved 世通华纳 版权所有 ICP-备-05012429</p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/public.js"></script>
+    <script type="text/javascript">
+        genMenu();
+        listnewsfeed_index();
+        listAllShows(videoData);
+    </script>
+  </body>
 </html>
